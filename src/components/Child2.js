@@ -7,12 +7,12 @@ const Child2 = (props) => {
             <h1>{props.prop4}</h1>
 
             <button onClick={() => {
-                props.updateProp3('Update Prop 3');
+                props.updateProp3('Updated Prop 3');
             }}>
                 Update Prop 3
             </button>
             <button onClick={() => {
-                props.updateProp4('Update Prop 4');
+                props.updateProp4('Updated Prop 4');
             }}>
                 Update Prop 4
             </button>

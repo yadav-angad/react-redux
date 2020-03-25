@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Level1 from './component/Level1';
+import FormConnector from './connectors/FormConnector';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,7 +19,8 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <Level1 />
+      <FormConnector />
+        {/* <Level1Connector /> */}
       </>
     )
   };

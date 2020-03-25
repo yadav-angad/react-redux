@@ -1,12 +1,12 @@
-import Child1 from '../component/Child1';
+import Child1 from '../components/Child1';
 import { connect } from 'react-redux';
-import { createAction1, createAction2 } from '../action/action1';
+import { createAction1, createAction2 } from '../actions/action1';
 
-const mapStateToProps = (store) => {
-    console.log("store : " + store.toString());
+const mapStateToProps = ({r1}) => {
+    console.log("store : ", store);
     return {
-        prop1: store.r1.prop1,
-        prop2: store.r1.prop2
+        prop1: r1.prop1,
+        prop2: r1.prop2
     };
 };
 
